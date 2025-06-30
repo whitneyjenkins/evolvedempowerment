@@ -6,7 +6,11 @@
   <title>Home – Evolved Empowerment Project Inc.</title>
   <style>
     body { font-family: 'Open Sans', sans-serif; margin: 0; background-color: #f4f9ff; color: #333; }
-    header, footer { background-color: #003366; color: white; text-align: center; padding: 1.5em; }
+    header, footer { background-color: #003366; color: white; padding: 1em; }
+    header { display: flex; align-items: center; justify-content: space-between; padding: 1em 2em; }
+    header img { height: 60px; }
+    header h1 { margin: 0; flex-grow: 1; text-align: center; }
+    header p { flex-basis: 100%; text-align: center; margin: 0.5em 0 0 0; }
     nav { background-color: #005599; text-align: center; padding: 1em; }
     nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
     .hero { padding: 4em 2em; text-align: center; background: linear-gradient(to right, #99c2ff, #ffffff); }
@@ -25,10 +29,12 @@
     .section { max-width: 1000px; margin: 3em auto; padding: 1em; text-align: center; background-color: white; border-radius: 8px; }
     .section h3 { color: #003366; }
     .section p { text-align: justify; }
+    .section img { max-width: 100%; border-radius: 8px; margin-top: 1em; }
   </style>
 </head>
 <body>
   <header>
+    <img src="assets/logo.png" alt="Evolved Empowerment Logo">
     <h1>Evolved Empowerment Project Inc.</h1>
     <p style="text-align: center;">"Empowering through beauty. Evolving through purpose."</p>
   </header>
@@ -47,7 +53,7 @@
   <section class="hero">
     <h2>Transforming Lives, One Crown at a Time</h2>
     <p>Join us in uplifting women and youth through beauty-centered healing, mentorship, and purpose-driven programs.</p>
-    <img src="assets/hero-diverse-women.jpg" alt="Empowered women">
+    <img src="assets/hero-empowerment.jpg" alt="Diverse empowered women">
     <button class="donate-btn">Donate Now</button>
   </section>
 
@@ -57,6 +63,7 @@
       Evolved Empowerment Project Inc. is a nonprofit organization committed to supporting women and youth who are overcoming trauma, hardship, or life transitions. 
       Through programs rooted in beauty, community, and healing, we help individuals rise into their full potential with confidence and dignity.
     </p>
+    <img src="assets/community-group.jpg" alt="Women mentoring in a circle">
   </section>
 
   <footer>
