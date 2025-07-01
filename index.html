@@ -54,8 +54,61 @@
   <a href="founders.html">Founders</a>
   <a href="contact.html">Contact</a>
   <a href="donate.html">Donate</a>
-  <a href="volunteer-application.html" class="cta-button" style="background-color:#005599; color:white; padding:0.75em 1.5em; border-radius:8px; text-decoration:none;">Get Involved</a>
-  <a href="evolver-intake-form.html">Get Help</a>
+ <style>
+  /* Dropdown menu styles */
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #005599;
+    min-width: 160px;
+    z-index: 1;
+    text-align: left;
+    border-radius: 4px;
+  }
+
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #0077cc;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover > a {
+    background-color: #0077cc;
+  }
+</style>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="mission.html">Our Mission</a>
+  <a href="vision.html">Our Vision</a>
+  <a href="about.html">About Us</a>
+  <a href="programs.html">Programs</a>
+  <a href="events.html">Events</a>
+  <a href="founders.html">Founders</a>
+  <a href="contact.html">Contact</a>
+  <a href="donate.html">Donate</a>
+  <!-- 🔽 Dropdown for Get Involved -->
+  <div class="dropdown">
+    <a href="#">Get Involved ▼</a>
+    <div class="dropdown-content">
+      <a href="volunteer-application.html">Volunteer</a>
+      <a href="evolver-intake-form.html">Get Help</a>
+    </div>
+  </div>
 </nav>
 
   <section class="hero">
