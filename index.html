@@ -5,143 +5,193 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home – Evolved Empowerment Project Inc.</title>
   <style>
-    body { font-family: 'Open Sans', sans-serif; margin: 0; background-color: #f4f9ff; color: #333; }
-    header, footer { background-color: #003366; color: white; padding: 1em; }
-    header { display: flex; align-items: center; justify-content: space-between; padding: 1em 2em; }
-    header img { height: 100px; max-width: none; }
-    header h1 { margin: 0; flex-grow: 1; text-align: center; }
-    header p { flex-basis: 100%; text-align: center; margin: 0.5em 0 0 0; }
-    nav { background-color: #005599; text-align: center; padding: 1em; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    .hero { padding: 4em 2em; text-align: center; background: linear-gradient(to right, #99c2ff, #ffffff); }
-    .hero h2 { font-size: 2.5em; color: #003366; margin-bottom: 0.5em; }
-    .hero p { font-size: 1.2em; margin-bottom: 1em; }
-    .hero img { max-width: 100%; border-radius: 12px; margin: 1em auto; }
+    /* --- GENERAL STYLES --- */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f4f9ff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 1.5em 1em;
+    }
+    nav {
+      background-color: #005599;
+      text-align: center;
+      padding: 1em 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+    }
+    nav .dropdown {
+      display: inline-block;
+      position: relative;
+    }
+    nav .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #005599;
+      border-radius: 4px;
+      z-index: 10;
+      margin-top: 8px;
+    }
+    nav .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    nav .dropdown-content a {
+      display: block;
+      padding: 10px 16px;
+    }
+    nav .dropdown:hover > a {
+      background-color: #0077cc;
+    }
+    /* --- HERO SECTION --- */
+    .hero {
+      background: linear-gradient(to right, #99c2ff, #ffffff);
+      text-align: center;
+      padding: 4em 2em;
+    }
+    .hero h2 {
+      font-size: 2.5em;
+      color: #003366;
+      margin-bottom: 0.5em;
+    }
+    .hero p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: auto 0 1.5em;
+      line-height: 1.5;
+    }
+    .hero .donate-btn {
       background-color: #0077cc;
       color: white;
       border: none;
-      padding: 0.75em 1.5em;
-      font-size: 1em;
+      padding: 0.8em 1.8em;
+      font-size: 1.1em;
       border-radius: 8px;
       cursor: pointer;
+      text-decoration: none;
     }
-    .section { max-width: 1000px; margin: 3em auto; padding: 1em; text-align: center; background-color: white; border-radius: 8px; }
-    .section h3 { color: #003366; }
-    .section p { text-align: justify; }
-    .section img { max-width: 100%; border-radius: 8px; margin-top: 1em; }
+    /* --- INFO SECTION --- */
+    .info-section {
+      background-color: white;
+      max-width: 900px;
+      margin: 3em auto;
+      padding: 2em 1em;
+      border-radius: 8px;
+      line-height: 1.6;
+    }
+    .info-section h3 {
+      color: #003366;
+      margin-bottom: 0.5em;
+    }
+    .info-section img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 1em auto;
+      border-radius: 8px;
+    }
+    /* --- CTA BUTTONS --- */
+    .cta-buttons {
+      text-align: center;
+      padding: 2em 0;
+    }
+    .cta-buttons a {
+      display: inline-block;
+      background-color: #005599;
+      color: white;
+      padding: 0.8em 1.8em;
+      margin: 0.5em;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1em;
+      font-weight: bold;
+    }
+    .cta-buttons a.help-btn {
+      background-color: #009688;
+    }
+    /* --- FOOTER --- */
+    footer p {
+      margin: 0.5em 0;
+      font-size: 0.9em;
+    }
+    footer .social {
+      margin-top: 1em;
+    }
+    footer .social img {
+      height: 32px;
+      margin: 0 8px;
+      vertical-align: middle;
+    }
   </style>
 </head>
 <body>
   <header>
-    <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
-      <img src="assets/logo_white_bg.png" alt="Evolved Empowerment Logo" style="height: 100px;">
-      <div style="flex-grow: 1; text-align: center;">
-        <h1 style="margin: 0;">Evolved Empowerment Project Inc.</h1>
-        <p style="margin: 0.5em 0 0;">"Empowering through beauty. Evolving through purpose."</p>
+    <div style="display:flex; align-items:center; justify-content:center; flex-wrap:wrap;">
+      <img src="assets/logo_white_bg.png" alt="Evolved Empowerment Logo" style="height:100px; margin-bottom: 0.5em;">
+      <div style="flex:1; min-width:200px;">
+        <h1 style="margin-bottom:0;">Evolved Empowerment Project Inc.</h1>
+        <p style="margin-top:0.3em;">“Empowering through beauty. Evolving through purpose.”</p>
       </div>
     </div>
   </header>
-    
-  </header>
 
   <nav>
- <style>
-  /* Dropdown menu styles */
-  .dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #005599;
-    min-width: 160px;
-    z-index: 1;
-    text-align: left;
-    border-radius: 4px;
-  }
-
-  .dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-  .dropdown-content a:hover {
-    background-color: #0077cc;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  .dropdown:hover > a {
-    background-color: #0077cc;
-  }
-</style>
-
-<nav>
-  <a href="index.html">Home</a>
-  <a href="mission.html">Our Mission</a>
-  <a href="vision.html">Our Vision</a>
-  <a href="about.html">About Us</a>
-  <a href="programs.html">Programs</a>
-  <a href="events.html">Events</a>
-  <a href="founders.html">Founders</a>
-  <a href="contact.html">Contact</a>
-  <a href="donate.html">Donate</a>
-  <!-- 🔽 Dropdown for Get Involved -->
-  <div class="dropdown">
-    <a href="#">Get Involved ▼</a>
-    <div class="dropdown-content">
-      <a href="volunteer-application.html">Volunteer</a>
-      <a href="evolver-intake-form.html">Get Help</a>
+    <a href="index.html">Home</a>
+    <a href="mission.html">Our Mission</a>
+    <a href="vision.html">Our Vision</a>
+    <a href="about.html">About Us</a>
+    <a href="programs.html">Programs</a>
+    <a href="events.html">Events</a>
+    <a href="founders.html">Founders</a>
+    <a href="contact.html">Contact</a>
+    <a href="donate.html">Donate</a>
+    <div class="dropdown">
+      <a href="#">Get Involved ▼</a>
+      <div class="dropdown-content">
+        <a href="volunteer-application.html">Volunteer</a>
+        <a href="evolver-intake-form.html">Get Help</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
   <section class="hero">
     <h2>Transforming Lives, One Crown at a Time</h2>
-    <p>Join us in uplifting women and youth through beauty-centered healing, mentorship, and purpose-driven programs.</p>
-    <img src="assets/hero-empowerment.jpg" alt="Diverse empowered women">
+    <p>Join us in uplifting women and youth through beauty-centered healing, mentorship, and purpose-driven programs that restore confidence and nurture growth.</p>
+    <a href="donate.html" class="donate-btn">Donate Now</a>
   </section>
 
-  <section class="section">
+  <section class="info-section">
     <h3>Welcome to Our Movement</h3>
     <p>
-      Evolved Empowerment Project Inc. is a nonprofit organization committed to supporting women and youth who are overcoming trauma, hardship, or life transitions. 
-      Through programs rooted in beauty, community, and healing, we help individuals rise into their full potential with confidence and dignity.
+      Evolved Empowerment Project Inc. is a nonprofit that supports women and youth overcoming trauma, hardship, or life transitions. Our beauty-based healing programs, mentorship, and community support provide tools for restoring self-worth and fulfilling potential.
     </p>
     <img src="assets/community-group.jpg" alt="Women mentoring in a circle">
-
-  <!-- Call to Action Section -->
-<div style="margin-top: 3em; text-align: center;">
-  <h3 style="color: #003366;">Ready to Take the Next Step?</h3>
-  <p style="max-width: 700px; margin: auto; font-size: 1.1em;">
-    Whether you’re looking to give support or receive it, we’re here to empower your journey.
-  </p>
-  <div style="margin-top: 1em;">
-    <a href="volunteer-application.html" style="display: inline-block; background-color: #005599; color: white; padding: 0.75em 1.5em; margin: 0.5em; border-radius: 8px; text-decoration: none; font-weight: bold;">Get Involved</a>
-    <a href="evolver-intake-form.html" style="display: inline-block; background-color: #009688; color: white; padding: 0.75em 1.5em; margin: 0.5em; border-radius: 8px; text-decoration: none; font-weight: bold;">Get Help</a>
-  </div>
-</div>
-<div style="text-align: center; margin-top: 1em;">
-  <a href="https://www.facebook.com/profile.php?id=61577781758803" target="_blank" style="text-decoration: none;">
-    <img src="assets/facebook-icon.png" alt="Facebook" style="height: 36px; vertical-align: middle;">
-    <span style="color: #3b5998; font-weight: bold; margin-left: 8px;">Follow Us on Facebook</span>
-  </a>
-  <br><br>
-  <a href="https://www.instagram.com/evolvedempowermentproject/" target="_blank" style="text-decoration: none;">
-    <img src="assets/instagram-icon.png" alt="Instagram" style="height: 36px; vertical-align: middle;">
-    <span style="color: #e4405f; font-weight: bold; margin-left: 8px;">Follow Us on Instagram</span>
-  </a>
-</div>
-
+    <div class="cta-buttons">
+      <a href="volunteer-application.html">Get Involved</a>
+      <a href="evolver-intake-form.html" class="help-btn">Get Help</a>
+    </div>
+  </section>
 
   <footer>
     <p>&copy; 2025 Evolved Empowerment Project Inc. | All rights reserved.</p>
+    <div class="social">
+      <a href="https://www.facebook.com/profile.php?id=61577781758803" target="_blank">
+        <img src="assets/facebook-icon.png" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/evolvedempowermentproject/" target="_blank">
+        <img src="assets/instagram-icon.png" alt="Instagram">
+      </a>
+    </div>
   </footer>
 </body>
 </html>
